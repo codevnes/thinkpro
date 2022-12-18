@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-Light.ttf);
+    font-weight: 300
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-Regular.ttf);
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-Medium.ttf);
+    font-weight: 500
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-Bold.ttf);
+    font-weight: 700
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+header {
+    .logo {
+        img {
+            max-width: 180px;
+            width: 120px;
+        }
+    }
+
+
+    .btn-promo {
+        font-weight: 700;
+        --tw-text-opacity: 1;
+        color: rgba(212, 42, 83, var(--tw-text-opacity));
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    border-bottom-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgba(236, 240, 244, var(--tw-border-opacity));
+    height: var(--t-header);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 101;
+}
+
+h3 {
+    font-size: 19px;
+    line-height: 150%;
+    font-weight: 800;
+}
+
+.t-btn-icon {
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: background-color .3s ease;
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+}
+
+.t-btn-icon--default {
+    --tw-bg-opacity: 1;
+    background-color: rgba(248, 250, 252, var(--tw-bg-opacity));
+}
+
+.t-input-search {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 240, 244, var(--tw-bg-opacity));
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    overflow: hidden;
+    padding: 4px 4px 4px 12px;
+    transition: background-color .2s ease-in-out;
+    width: 100%;
+}
+
+.the-navigation {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    --tw-shadow: 0px 0px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    height: var(--t-navigation);
+    padding: 4px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(var(--t-header) - var(--t-navigation));
+    transition: top .2s ease-in-out;
+    z-index: 99;
+}
+
+.t-input-search__input {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 240, 244, var(--tw-bg-opacity));
+    flex: 1 1 0%;
+    height: 34px;
+    outline: none;
+    transition: background-color .2s ease-in-out;
+    width: 100%;
+}
+
+:root {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
